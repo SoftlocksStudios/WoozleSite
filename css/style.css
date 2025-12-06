@@ -1,15 +1,3 @@
-.page {
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    transition: opacity 0.12s ease;
-}
-
-.page.activePage {
-    position: relative;
-    opacity: 1 !important;
-}
-
 body {
   background: #000;
   color: #fff;
