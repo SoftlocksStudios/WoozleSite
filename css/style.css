@@ -29,9 +29,15 @@ head1 {
 }
 
 .topnav a:hover {
-  color: #4da3ff;
+  color: #00aaff; 
+  background-color: #444;
 }
 
-.topnav a:visited {
+.topnav a.active {
+  background-color: #04AA6D; 
   color: white;
+}
+
+.page {
+  padding: 20px;
 }
