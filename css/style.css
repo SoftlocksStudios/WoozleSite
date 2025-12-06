@@ -62,3 +62,11 @@ head1 {
   font-size: 16px;
   cursor: pointer;
 }
+
+.glowingText {
+  text-shadow: 0px 0px 10px cyan;
+}
+
+.centered {
+  text-align: center;
+}
