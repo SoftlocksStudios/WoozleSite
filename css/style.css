@@ -28,16 +28,10 @@ head1 {
   font-size: 17px;
 }
 
-.topnav a:visited {
-  color: white;
-}
-
 .topnav a:hover {
-  color: #00a2ff;
-  background-color: #222;
+  color: #4da3ff;
 }
 
-.topnav a.active {
-  background-color: #04AA6D;
+.topnav a:visited {
   color: white;
 }
