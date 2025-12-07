@@ -18,7 +18,6 @@ function openPage(pageName) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
     document.querySelectorAll('.tablink').forEach(tab => {
         tab.addEventListener('click', () => {
             const page = tab.dataset.page;
@@ -35,6 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const vid = document.querySelector("video");
+  if (vid) {
+    vid.muted = true;  
+    vid.play().catch(() => {});
+  }
+});
 
 window.addEventListener("hashchange", () => {
     location.reload();
