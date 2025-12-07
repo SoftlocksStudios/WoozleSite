@@ -1,2 +1,2 @@
-# WoozleSite
+# The Woozle website
 Website for Woozle
