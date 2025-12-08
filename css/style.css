@@ -78,12 +78,12 @@ head1 {
 }
 
 spacer5 {
-  height: 30px;
+  height: 5px;
   display: block;
 }
 
 spacer15 {
-  height: 30px;
+  height: 15px;
   display: block;
 }
 
@@ -93,7 +93,7 @@ spacer30 {
 }
 
 spacer50 {
-  height: 59px;
+  height: 50px;
   display: block;
 }
 
