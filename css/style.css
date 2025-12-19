@@ -104,3 +104,85 @@ divider {
   margin: 15px 0;
   display: block;
 }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  aspect-ratio: 1 / 1;
+  min-height: 220px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.7);
+}
+.card .card-body h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+
+.card .muted {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 13px;
+}
+
+.download-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.button {
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  min-width: 110px;
+}
+
+.button.secondary {
+  background: transparent;
+  color: #5bba50;
+  border: 2px solid rgba(91,186,80,0.85);
+}
+
+.card .button:not(.secondary) {
+  background-color: #5bba50;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 420px) {
+  .card {
+    aspect-ratio: auto;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
